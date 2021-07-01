@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Information Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        h1 {
+           
+            text-align: center;
+            color:crimson;
+            font-size: 5em;
+            transition: 0.5s;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 3px 0 yellow, 0 4px 0 yellow,
+                0 5px 0 yellow, 0 6px 0 yellow,
+                0 7px 0 yellow, 0 8px 0 yellow,
+                0 9px 0 yellow, 0 10px 0 yellow,
+                0 11px 0 yellow, 0 12px 0 yellow,
+                0 20px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        #header{
+            background-color: cyan;
+        }
+        #header:hover{
+            background-color: green;
+        }
+        body{
+            background-color: gray;
+        }
+        p{
+            background-color: lawngreen;
+            text-align: center;
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30em;
+            height: inherit;
+        }
+
+       #form{
+        left      : 50%;
+        top       : 50%;
+        position  : absolute;
+        transform : translate(-50%, -50%)
+        
+         }
+         #ltr
+         {
+             font-weight: bold;
+         }
+         h5{
+             text-align: center;
+             text-decoration: underline;
+         }
+         input{
+            border:0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid black;
+            
+         }
+         #mf{
+             border: 0;
+             outline: 0;
+             background: transparent;
+         }
+         input:hover{
+             cursor: pointer;
+         }
+         #mr{
+             background-color:lightgreen;
+             color: crimson;
+         }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+   <div id= "header">
+       <header>
+           <h1>
+               Mobile Information Store
+           </h1>
+       </header>
+   </div>
+   <marquee  direction="left" id="mr">Welcom To Mobile Information Store </marquee>
+
+
+   <!-- div for body -->
+
+<div>
+
+<form action="mobile" method="POST" id ="form">
+<table >
+  <h5>Mobile Information</h6><br>
+    <tr>
+        <td id="ltr">Mobile Company :</td>
+        <td><input type="text" name="comp" id="mc"></td>
+    </tr>
+    <tr>
+        <td id="ltr">Model Name :</td>
+        <td><input type="text" name="model" id="mn"></td>
+    </tr>
+    <tr>
+        <td id="ltr">Mobile Price :</td>
+        <td><input type="number" name="price" id="mp"></td>
+    </tr>
+    <tr>
+        <td id="ltr">Image Upload :</td>
+        <td><input type="file" name="file" id="mf"></td>
+    </tr>
+   
+</table>
+<br>
+<div align="center">
+    <button  type="submit" class="btn btn-primary" >Submit</button></td> 
+</div>
+
+</form>
+
+
+</div>
+<!-- End div for body -->
+
+</div>
+<footer>
+    <p> Copy Write<sup>&copy</sup>By Tarun</p>
+</footer>
+
+   
+</body>
+</html>
